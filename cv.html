@@ -1,190 +1,79 @@
 <!DOCTYPE html>
-<!-- @JoaoAlisonTI: Reference article https://www.w3schools.com/howto/howto_website_create_resume.asp -->
-<!-- @JoaoAlisonTI: Useful link to use fontawesome (fa) icons: https://fontawesome.com/v4/icons/ -->
+<!-- @JoaoAlisonTI -->
 <html lang="pt-BR">
 
   <head>
-    <title>João AlisonTI</title>
+    <title>Curriculum</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="curriculum.css" type="text/css" media="all" />
+    <script src="main.js" defer></script>
   </head>
 
-  <body class="w3-light-grey" cz-shortcut-listen="true">
-  
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-  
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-  
-        <!-- Left Column -->
-        <div class="w3-third">
-  
-          <div class="w3-white w3-text-grey w3-card-4">
-            <!-- @falvojr: This container has been modified to not use a profile picture. -->
-            <header class="w3-container">
-            <button>Menu</button>
-            <h4>João Alison ⚡</h4>
-            <button>🌙</button>
-            </header>
-            <div class="w3-container">
-              <p><i class="fa fa-terminal fa-fw w3-margin-right w3-large w3-text-indigo"></i>Técnico em Informática
-              </p>
-              <p><i class="fa fa-terminal fa-fw w3-margin-right w3-large w3-text-indigo"></i>Desenvolvedor Jr</p>
-              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Forquilha-CE, Brasil</p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>joaoalison.pessoal@gmail.com</p>
-              <!--<p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>(16) 99721-8281</p>-->
-              <hr>
-  
-              <p class="w3-large">
-                <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b>
-              </p>
-              <p>JavaScript</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
-              </div>
-              <p>NodeJs</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:40%">40%</div>
-               </div>
-              <p>PHP</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:30%">30%</div>
-              </div>
-              <p>SQL</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:30%">30%</div>
-              </div>
-              <p>Bootstrap Framework</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
-              </div>
-              <p>Git/Github</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
-              </div>
-              <br>
-  
-              <p class="w3-large w3-text-theme">
-                <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Idiomas</b>
-              </p>
-              <p>Português</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%"></div>
-              </div>
-              <p>Inglês</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:30%"></div>
-              </div>
-              <p>Espanhol</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:25%"></div>
-              </div>
-              <br>
+  <body class="main">
+          <header class="my-header">
+            <button class="btn-menu"><i class="fa fa-solid fa-bars"></i></button>
+            <h3 class="logo-title">João Alison ⚡</h3>
+            <button class="btn-change"><i class="fa fa-regular fa-sun"></i></button>
+          </header>
+          
+          <div class="menu effect">
+            <div style="text-align: right;">
+            <button class="btn-close btn-menu"><i class="fa fa-solid fa-xmark"></i></button>
             </div>
-          </div><br>
-  
-          <!-- End Left Column -->
-        </div>
-  
-        <!-- Right Column -->
-        <div class="w3-twothird">
-    
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-profile fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Sobre</h2>
-            <p>Doutorando na Universidade de São Paulo (USP), onde contribui junto ao Instituto de Ciências Matemáticas e de Computação (ICMC), campus de São Carlos. Possui 12 anos de experiência na área de desenvolvimento de software, com ênfase na análise, construção e arquitetura de sistemas Web e Mobile. Além disso, é certificado nas plataformas .NET (Microsoft), Java (Oracle) e Android (Google). Atualmente é Líder Técnico no time de Educação da DIO, onde é responsável por orquestrar os conteúdos educacionais da plataforma.</p>
-          </div>
-
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Experiências
-            </h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>Uninta Centro Universitário Inta</b></h5>
-              <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Agosto 2022 - Dezembro 2022</h6>
-              <p>Técnico em Informática - Suporte a Sistemas.</p>
+            <div class="my-foto">
+            <img src="https://github.com/JoaoAlisonTI.png" alt="minha foto de perfil" />
             </div>
-          </div>
-  
-          <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Educação
-            </h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>E.E.E.P Gerardo José Dias de loiola</b></h5>
-              <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fevereiro 2020 - Dezembro 2022</h6>
-              <p>
-                Maior plataforma de educação aberta em TI da América Latina, com mais 1 milhão de usuários. 
-                A DIO possui parcerias com algumas das empresas mais inovadoras do mundo, proporcionando experiências 
-                de ensino imersivas e com foco em empregabilidade. Nesse contexto, seguem meus principais certificados:
-              </p>
-              <ul>
-                <li><a href="https://www.dio.me/certificate/762101D2" target="_blank">Formação: Programação Reativa com Spring WebFlux (36h)</a></li>
-                <li><a href="https://www.dio.me/certificate/07041B99" target="_blank">Curso: Desenvolvimento Mobile Nativo Para Android (1h)</a></li>
-                <li><a href="https://www.dio.me/certificate/F12AC30B" target="_blank">Curso: Componentes, Layouts e UI/UX Em Apps Android (3h)</a></li>
-                <li><a href="https://www.dio.me/certificate/3FB20BF1" target="_blank">Curso: Java e Kotlin Juntos!? Construindo Apps Android (3h)</a></li>
-              </ul>
-              <hr>
-              <h5 class="w3-opacity"><b>Digital Innovation One (DIO)</b></h5>
-              <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fevereiro 2023 - Atual</h6>
-              <p>
-                Maior plataforma de educação aberta em TI da América Latina, com mais 1 milhão de usuários. 
-                A DIO possui parcerias com algumas das empresas mais inovadoras do mundo, proporcionando experiências 
-                de ensino imersivas e com foco em empregabilidade. Nesse contexto, seguem meus principais certificados:
-              </p>
-              <ul>
-                <li><a href="https://www.dio.me/certificate/762101D2" target="_blank">Formação: Programação Reativa com Spring WebFlux (36h)</a></li>
-                <li><a href="https://www.dio.me/certificate/07041B99" target="_blank">Curso: Desenvolvimento Mobile Nativo Para Android (1h)</a></li>
-                <li><a href="https://www.dio.me/certificate/F12AC30B" target="_blank">Curso: Componentes, Layouts e UI/UX Em Apps Android (3h)</a></li>
-                <li><a href="https://www.dio.me/certificate/3FB20BF1" target="_blank">Curso: Java e Kotlin Juntos!? Construindo Apps Android (3h)</a></li>
-              </ul>
-              <hr>
-          </div>
-
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projetos
-            </h2>
-            <div class="w3-container">
-              <h6 class="w3-text-indigo">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/falvojr/copa-2022-android" target="_blank">falvojr/copa-2022-android</a>
-              </h6>
-              <p>App Android Nativo utilizando a arquitetura MVVM com Kotlin e diversas features do Android Jetpack.</p>
-              <hr>
+            <div class="nav-links">
+              <a>Home</a>
+              <a>Curriculum</a>
+              <a>Projects</a>
             </div>
-            <div class="w3-container">
-              <h6 class="w3-text-indigo">
-                <i class="fa fa-gitlab fa-fw w3-margin-right"></i>
-                <a href="https://gitlab.com/denilsonbonatti/kubernetes-projeto2-dio" target="_blank">denilsonbonatti/kubernetes-projeto2-dio</a>
-              </h6>
-              <p>Repositório no GitLab com um pipeline configurado em Kubernetes.</p>
-            </div>
+            <div class="social-media">
+                <a class="btn-media"><i class="fa fa-brands fa-github"></i></a>
+                <a class="btn-media"><i class="fa fa-brands fa-linkedin"></i></a>
+                <a class="btn-media"><i class="fa fa-brands fa-instagram"></i></a>
+              </div>
           </div>
-  
-          <!-- End Right Column -->
-        </div>
-  
-        <!-- End Grid -->
-      </div>
-  
-      <!-- End Page Container -->
-    </div>
-  
-    <footer class="w3-container w3-indigo w3-center w3-margin-top">
-      <p>Network 🌐</p>
-      <a href="https://github.com/JoaoAlisonTI" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/JoãoAlisonDeSousaMartins" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-      <a href="https://www.instagram.com/joao_alison_23" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
-  </div>
+          
+            <section class="section-profile">
+              <div class="my-profile">
+                <h2>Profile</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="my-experience">
+                <h2>Experience</h2>
+                <h4>Técnico em Informática - Suporte a Sistemas</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="my-education">
+                <h2>Education</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="my-certifications">
+                <h2>Certifications</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="my-skills">
+                <h2>
+                  Skills
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </section>
+            
+            <footer class="my-footer">
+              <p> 2023 João Alison</p>
+              <p>Website developed by <a href="https://github.com/JoaoAlisonTI" target="_blank">JoaoAlisonTI⚡</a></p>
+            </footer>
   </body>
 
 </html>

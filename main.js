@@ -5,11 +5,19 @@ document.querySelector('.menu').style.marginLeft = `-${menuSize}`;
 
 document.querySelector('.btn-menu').addEventListener('click', e => {
     openn = true;
+    document.querySelector('.my-header').classList.add('background-nulo');
+    document.querySelector('.section-profile').classList.add('background-nulo');
+    document.querySelector('.my-footer').classList.add('background-nulo');
+    document.querySelector('.main').style.backgroundColor = '#282a30';
     toggleMenu();
 })
 
 document.querySelector('.btn-close').addEventListener('click', e => {
     openn = false;
+    document.querySelector('.my-header').classList.remove('background-nulo');
+    document.querySelector('.section-profile').classList.remove('background-nulo');
+    document.querySelector('.my-footer').classList.remove('background-nulo');
+    document.querySelector('.main').style.backgroundColor = '#282a36';
     toggleMenu();
 })
 

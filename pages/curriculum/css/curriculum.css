@@ -16,6 +16,9 @@ body {
   align-items: center;
   background-color: rgba(40, 42, 54, 0.9);
   backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -103,21 +106,74 @@ body {
   background-color: #3d4c7a;
 }
 
-
 .section-profile {
   margin: 120px 25px 25px 25px;
 }
-.my-profile {
-  padding-bottom: 50px;
-}
 .my-profile > p {
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
 }
 h2 {
   font-size: 28px;
   margin-top: 8px;
   margin-bottom: 15px;
+}
+
+.section-experience {
+  margin: 30px 25px 25px 25px;
+}
+.section-experience div:nth-child(3) {
+  border-left: 3px solid #ff5555;
+}
+.my-experience {
+  margin-left: 6px;
+  padding: 0px 10px 10px 25px;
+}
+.circle {
+  float: left;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  background-color: #ff5555;
+}
+.my-experience > h5 {
+  margin: 10px 0px 10px 0px;
+  font-weight: 300;
+}
+.my-experience > p {
+  font-weight: 400;
+  text-align: justify;
+}
+
+.section-education {
+  margin: 30px 25px 25px 25px;
+}
+.section-education div:nth-child(3) {
+  border-left: 3px solid #ff5555;
+}
+.my-education {
+  margin-left: 6px;
+  padding: 0px 10px 20px 20px;
+}
+.my-education > h5 {
+  margin: 7px 0px 0px 0px;
+  font-weight: 300;
+}
+
+.section-certifications {
+  margin: 30px 25px 25px 25px;
+}
+.my-certifications > ul > li {
+  margin-left: 20.5px;
+  padding-bottom: 7px;
+}
+
+.section-skills {
+  margin: 30px 25px 25px 25px;
+}
+.my-skills > ul > li {
+  margin-left: 20.5px;
+  padding-bottom: 7px;
 }
 
 .my-footer {
@@ -136,4 +192,49 @@ h2 {
 }
 .background-nulo {
   display: none;
+}
+
+@media screen and (min-width: 1020px) {
+  .section-profile {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-experience {
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+  .section-education {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-certifications {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-skills {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-profile {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-experience {
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+  .section-education {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-certifications {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .section-skills {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

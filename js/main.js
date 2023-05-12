@@ -1,25 +1,21 @@
-const menuSize = '330px';
+const menuSize = '340px';
 let openn = true;
+
+function toggleLightMode() {
+  document.querySelector('.my-body').classList.toggle("light-mode");
+  document.querySelector('.my-header').classList.toggle('light-mode');
+  document.querySelector('.menu').classList.toggle('light-mode');
+}
 
 document.querySelector('.menu').style.marginLeft = `-${menuSize}`;
 
 document.querySelector('.btn-menu').addEventListener('click', e => {
     openn = true;
-    document.querySelector('.my-header').classList.add('background-nulo');
-    document.querySelector('.section-about').classList.add('background-nulo');
-    document.querySelector('.section-projects').classList.add('background-nulo');
-    document.querySelector('.my-footer').classList.add('background-nulo');
-    document.querySelector('.my-body').style.backgroundColor = '#282a30';
     toggleMenu();
 })
 
 document.querySelector('.btn-close').addEventListener('click', e => {
     openn = false;
-    document.querySelector('.my-header').classList.remove('background-nulo');
-    document.querySelector('.section-about').classList.remove('background-nulo');
-    document.querySelector('.section-projects').classList.remove('background-nulo');
-    document.querySelector('.my-footer').classList.remove('background-nulo');
-    document.querySelector('.my-body').style.backgroundColor = '#282a36';
     toggleMenu();
 })
 
